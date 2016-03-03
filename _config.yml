@@ -6,11 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Germany, England and IT
+title: A developer notes
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Some notes about my experience in Germany, the previous one in England
-  and some IT, that can stand for either Italy or Information Technology.
+  Some notes about my experience with some programming languages, architectures, tools.
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: matteo_traina
