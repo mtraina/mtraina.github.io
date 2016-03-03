@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Functional Programming in Scala"
+date:   2016-02-02 20:03:08 +0100
+categories: scala
+---
+
+I decided to start learning Scala, again, after starting and stopping few times in the past. The main reason was because
+something else came out, on my daily job or in something is was studying; moreover I often found the language not actually straightforward meaning you need to put quite an effort to master it.  
+To do my study I decided to use the book "Functional Programming in Scala" of Paul Chiusano and Rúnar Bjarnason. This book is actually not a book to how to program in Scala, for a novice, but instead is teaching how to learn functional programming, using Scala as the language for implement the exercises.
+
+I'm going to talk about my experience by chapter of the book. Perhaps some of my implementation will result different of the one the authors propose on the [repository related to the book] [fpis-authors-repo] but the result must be the same.
+
+On top of that, the project I create is using SBT as built tool and every exercise is written starting from a (Scala) test.
+
+I completed the chapter two of the book, pretty basic exercises but very good to brush
+
+[fpis-authors-repo]: https://github.com/fpinscala/fpinscala
+
+[fpis-ch02-repo]: https://github.com/mtraina/functional-programming-in-scala/tree/master/src/main/scala/com/mtraina/fpis/chapter02
+
+[fpis-ch02-test-repo]: https://github.com/mtraina/functional-programming-in-scala/tree/master/src/test/scala/com/mtraina/fpis/chapter02
