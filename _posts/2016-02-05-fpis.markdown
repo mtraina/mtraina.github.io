@@ -17,6 +17,6 @@ of the one the authors propose on the [repository related to the book][fpis-auth
 
 On top of that, the project I create is using SBT as built tool and every exercise is written starting from a (Scala) test.
 
-The repository of the project can be found [here](https://github.com/mtraina/functional-programming-in-scala]).
+The repository of the project can be found [here](https://github.com/mtraina/functional-programming-in-scala).
 
 [fpis-authors-repo]: https://github.com/fpinscala/fpinscala
