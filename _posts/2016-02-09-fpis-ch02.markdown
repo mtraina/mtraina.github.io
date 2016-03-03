@@ -7,8 +7,8 @@ categories: scala
 
 I completed the chapter two of the book, pretty basic exercises but very good to brush up some important concepts of functional programming such as recursion, currying, function composition.
 
-[source code][fpis-ch02-repo]
-[tests][fpis-ch02-test-repo]
+* [source code][fpis-ch02-repo]
+* [tests][fpis-ch02-test-repo]
 
 [fpis-ch02-repo]: https://github.com/mtraina/functional-programming-in-scala/tree/master/src/main/scala/com/mtraina/fpis/chapter02
 
