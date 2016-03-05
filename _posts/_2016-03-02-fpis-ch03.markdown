@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Functional Programming in Scala, chapter 3"
+date:   2016-03-02 22:40:05 +0100
+categories: scala
+---
+
+I completed the chapter three of the book, pretty basic exercises but very good to brush up some important concepts of 
+functional programming such as recursion, currying, function composition.
+
+Pretty enjoyed it, interesting that Scala provides an annotation for a function that is tail recursive
+
+```scala
+def factorial(n: Int): Int = {
+    @tailrec
+    def go(n: Int, acc: Int): Int = {
+      if(n <= 0) acc
+      else go(n-1, n * acc)
+    }
+    go(n, 1)
+  }
+```
+
+A function is tail recursive if is returning the result of the recursive call directly, without doing anything else.
+
+It's important to say that if a function is annotated in this way and the compiler can't perform a tail call elimination
+the compiler will give us an error.
+
+Here the code related to this chapter:
+
+* [source code][fpis-ch02-repo]
+* [tests][fpis-ch02-test-repo]
+
+[fpis-ch02-repo]: https://github.com/mtraina/functional-programming-in-scala/tree/master/src/main/scala/com/mtraina/fpis/chapter02
+
+[fpis-ch02-test-repo]: https://github.com/mtraina/functional-programming-in-scala/tree/master/src/test/scala/com/mtraina/fpis/chapter02
