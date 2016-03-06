@@ -10,7 +10,7 @@ because is backed by Google itself, so I decided to investigate a bit.
 
 When searching information about it, one of the most common concept you'll find is about how quick is to learn, especially if you have a C/C++ background. In fact the syntax is pretty similar and Go is using pointers as well.
 
-The following example is based on the one that Tour of Go is presenting [1][tour-of-go-pointers]:
+The following example is based on the [one that Tour of Go is presenting][tour-of-go-pointers] :
 
 ```go
 package main
@@ -26,12 +26,11 @@ func main() {
 	fmt.Println(i)  // see the new value of i
 }
 ```
-On top of this the engineers that wrote the language added an interesting way to manage concurrency, using goroutines, defined as "lightweight thread of execution" [2][tour-of-go-goroutines].
+On top of this the engineers that wrote the language added an interesting way to manage concurrency, using goroutines, defined as [lightweight thread of execution][tour-of-go-goroutines].
 
 I started playing with the language, following the [Tour of Go tutorial][tour-of-go], here the repository related to it:
 [Tour of go](https://github.com/mtraina/a-tour-of-go)
 
-References:
-* [tour-of-go]: https://tour.golang.org
-* [tour-of-go-pointers]: https://tour.golang.org/moretypes/1
-* [tour-of-go-goroutines]: https://tour.golang.org/concurrency/1
+[tour-of-go]: https://tour.golang.org
+[tour-of-go-pointers]: https://tour.golang.org/moretypes/1
+[tour-of-go-goroutines]: https://tour.golang.org/concurrency/1
