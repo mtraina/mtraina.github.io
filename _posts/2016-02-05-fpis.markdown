@@ -6,16 +6,18 @@ categories: scala
 ---
 
 I decided to start learning Scala, again, after starting and stopping few times in the past. The main reason was because
-something else came out, on my daily job or in something is was studying; moreover I often found the language not 
-actually straightforward, meaning you need to put quite an effort to master it.  
-To do my study I decided to use the book "Functional Programming in Scala" of Paul Chiusano and Rúnar Bjarnason. 
-This book is actually not a book to how to program in Scala, for a novice, but instead is teaching how to learn 
-functional programming, using Scala as the language for implement the exercises.
+something else came out, on my daily job or in something I was studying; moreover I often found the language not
+actually straightforward, meaning you need to put quite an effort to master it, so more (quite) time.
 
-I'm going to talk about my experience by chapter of the book. Perhaps some of my implementation will result different 
-of the one the authors propose on the [repository related to the book][fpis-authors-repo] but the result must be the same.
+To do my studies I decided to use the book [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala) by Paul Chiusano and Rúnar Bjarnason.  
+This book is actually not a book teaching to how to program in Scala, but instead is teaching how to learn
+functional programming, using Scala as the language for implement the exercises. So a small knowledge on Scala its recommended.
 
-On top of that, the project I create is using SBT as built tool and every exercise is written starting from a (Scala) test.
+I'm going to post about my experience on the book by chapter.<br/>
+Perhaps some of my implementation will result slightly different
+from the one the authors propose on the [repository related to the book][fpis-authors-repo] but the result must be the same.
+
+Having said that, the project I created is using SBT as built tool and every exercise is written starting from a (Scala) test.
 
 The repository of the project can be found [here](https://github.com/mtraina/functional-programming-in-scala).
 
