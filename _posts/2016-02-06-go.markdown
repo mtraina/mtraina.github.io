@@ -8,8 +8,7 @@ categories: go
 Among the new (or relatively new) languages I keep hearing about, Go is one that has quite a lot of traction, perhaps
 because is backed by Google itself, so I decided to investigate a bit.
 
-When searching information about it, one of the most common concept you'll find is about how quick is to learn, especially if you have a C/C++ background. In fact the syntax is pretty similar and Go is using pointers as well.
-
+When searching information about it, one of the most common concept you'll find is about how quick is to learn, especially if you have a C/C++ background. In fact the syntax is pretty similar and Go is using pointers as well.  
 The following example is based on the [one that Tour of Go is presenting][tour-of-go-pointers] :
 
 ```go
@@ -19,7 +18,6 @@ import "fmt"
 
 func main() {
 	i := 42
-
 	p := &i         // point to i
 	fmt.Println(*p) // read i through the pointer
 	*p = 21         // set i through the pointer
@@ -28,8 +26,7 @@ func main() {
 ```
 On top of this the engineers that wrote the language added an interesting way to manage concurrency, using goroutines, defined as [lightweight thread of execution][tour-of-go-goroutines].
 
-I started playing with the language, following the [Tour of Go tutorial][tour-of-go], here the repository related to it:
-[Tour of go](https://github.com/mtraina/a-tour-of-go)
+I started playing with the language, following the [Tour of Go tutorial][tour-of-go] and [here](https://github.com/mtraina/a-tour-of-go) is the repository related to it.
 
 [tour-of-go]: https://tour.golang.org
 [tour-of-go-pointers]: https://tour.golang.org/moretypes/1
