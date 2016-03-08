@@ -7,7 +7,7 @@ categories: scala
 
 I finished the chapter three of the book, here the focus was on creating our own implementation of list and tree.
 
-<h4>Pattern matching</h4>
+<h3>Pattern matching</h3>
 Extensive use of the pattern matching, that is actually a switch on steroids, very powerful.<br>
 This example shows the implementation of the tail method, that is just returning everything but the head of a sequence
 
