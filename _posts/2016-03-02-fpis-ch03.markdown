@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Functional Programming in Scala, chapter 3"
+date:   2016-03-02 22:40:05 +0100
+categories: scala
+---
+
+I finished the chapter three of the book, here the focus was on creating our own implementation of list and tree.
+
+<h4>Pattern matching</h4>
+Extensive use of the pattern matching, that is actually a switch on steroids, very powerful.<br>
+This example shows the implementation of the tail method, that is just returning everything but the head of a sequence
+
+```scala
+def tail[A](l: List[A]): List[A] = {
+    l match {
+      case Nil => Nil
+      case Cons(_, t) => t
+    }
+  }
+```
+As you can see, we pass a list as argument of the function and than we match the structure of it: if Nil it just return an empty list (Nil and empty list mean the same in this specific implementation of List).  
+If it matches the structure that is an head and a tail, just returns the tail (to be precise for this match we don't even take in account the first part of the structure, that's why we are using the underscore).
+
+Here the code related to this chapter:
+
+* [source code][fpis-ch03-repo]
+* [tests][fpis-ch03-test-repo]
+
+[fpis-ch03-repo]: https://github.com/mtraina/functional-programming-in-scala/tree/master/src/main/scala/com/mtraina/fpis/chapter03
+
+[fpis-ch03-test-repo]: https://github.com/mtraina/functional-programming-in-scala/tree/master/src/test/scala/com/mtraina/fpis/chapter03
