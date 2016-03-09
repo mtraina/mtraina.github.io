@@ -76,7 +76,7 @@ If you notice the fold left function is annotated as tail recursive because, in 
 I added a the definition from the documentation of the programming language [Haskell](https://www.haskell.org): in fact Scala borrows few concepts from the former.
 
 <h3>Code</h3>
-The following links are related to the code for the chapter 3:
+The following links are related to the source code for the chapter 3:
 
 * [source code][fpis-ch03-repo]
 * [tests][fpis-ch03-test-repo]
