@@ -77,6 +77,7 @@ I added a the definition from the documentation of the programming language [Has
 
 <h3>Code</h3>
 The following links are related to the code for the chapter 3:
+
 * [source code][fpis-ch03-repo]
 * [tests][fpis-ch03-test-repo]
 
