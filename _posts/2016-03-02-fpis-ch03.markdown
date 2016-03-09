@@ -38,10 +38,10 @@ In the case of the sum operation, here the implementation using fold right
 
 ```scala
 def foldRight[A,B](as: List[A], z: B)(f: (A,B) => B): B =
-    as match {
-      case Nil => z
-      case Cons(x, xs) => f(x, foldRight(xs, z)(f))
-    }
+  as match {
+    case Nil => z
+    case Cons(x, xs) => f(x, foldRight(xs, z)(f))
+  }
 
 def sumR(ns: List[Int]) = foldRight(ns, 0)(_ + _)
 
@@ -51,12 +51,28 @@ So starting from the value 0, the [identity for the addition](https://en.wikiped
 
 ((0 + 3) + 2) + 1 = 6   
 
+<h4>Fold left</h4>
+Fold left is actually doing the opposite of fold right, applying the function to the first element of the list and then recursively applying the function between the result and the next element.
 
+```scala
+@tailrec
+def foldLeft[A,B](as: List[A], z: B)(f: (B,A) => B): B =
+  as match {
+    case Nil => z
+    case Cons(h,t) => foldLeft(t, f(z, h))(f)
+  }
 
-<!-- As you can see I added the definition from the documentation of the programming language [Haskell](https://www.haskell.org): in fact Scala borrows few concepts from the former. -->
+def sumL(ns: List[Int]) = foldLeft(ns, 0)(_ + _)
 
-Here the code related to this chapter:
+sumL(List(1,2,3)) shouldBe 6
+```
 
+<h4>Difference between fold right and fold left</h4>
+The two approaches look similar but the important difference is that with fold right we need to traverse the all data structure before starting applying the function recursively.
+
+If you notice the fold left function is annotated as tail recursive because, in fact, the last operation is doing is calling itself. This is a big advantage on fold left over fold right, for data structures with a lot of elements, at least in the Scala implementation.
+
+The following links are related to the code for the chapter 3:
 * [source code][fpis-ch03-repo]
 * [tests][fpis-ch03-test-repo]
 
