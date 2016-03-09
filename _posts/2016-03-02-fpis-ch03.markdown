@@ -72,6 +72,10 @@ The two approaches look similar but the important difference is that with fold r
 
 If you notice the fold left function is annotated as tail recursive because, in fact, the last operation is doing is calling itself. This is a big advantage on fold left over fold right, for data structures with a lot of elements, at least in the Scala implementation.
 
+<h3>Notes</h3>
+I added a the definition from the documentation of the programming language [Haskell](https://www.haskell.org): in fact Scala borrows few concepts from the former.
+
+<h3>Code</h3>
 The following links are related to the code for the chapter 3:
 * [source code][fpis-ch03-repo]
 * [tests][fpis-ch03-test-repo]
